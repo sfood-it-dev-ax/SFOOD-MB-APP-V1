@@ -2,3 +2,5 @@
 메모앱 API 서비스
 AI 기반 개발 테스트 버전 1 
 
+## 문서
+- [빌드 이슈 점검 이력](docs/build-troubleshooting.md)
