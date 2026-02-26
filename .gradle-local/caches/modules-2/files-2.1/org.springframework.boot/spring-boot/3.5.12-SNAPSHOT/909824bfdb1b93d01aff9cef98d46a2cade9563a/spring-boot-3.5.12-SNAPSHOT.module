@@ -1,0 +1,136 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot",
+    "version": "3.5.12-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.16"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.2.16"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-3.5.12-SNAPSHOT.jar",
+          "url": "spring-boot-3.5.12-SNAPSHOT.jar",
+          "size": 1903154,
+          "sha512": "cca66cea8e848c6a0f9b2fe8d61c8250a4fa490221596dec6f613708d72122ba92a7cf9140515c0da93894975130927ea19400db64ad911fda38ca5bd919a62f",
+          "sha256": "cb4b5094dc3738dd9162b1cb8f9c87ab54ee8be9a6389e3fa0670f20bb8fe607",
+          "sha1": "ce93046d9f1412cea77bec5eceec018440d5937b",
+          "md5": "c4f0dfff4f63e86e31e3f4e3e53c2bb0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.16"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.2.16"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-3.5.12-SNAPSHOT.jar",
+          "url": "spring-boot-3.5.12-SNAPSHOT.jar",
+          "size": 1903154,
+          "sha512": "cca66cea8e848c6a0f9b2fe8d61c8250a4fa490221596dec6f613708d72122ba92a7cf9140515c0da93894975130927ea19400db64ad911fda38ca5bd919a62f",
+          "sha256": "cb4b5094dc3738dd9162b1cb8f9c87ab54ee8be9a6389e3fa0670f20bb8fe607",
+          "sha1": "ce93046d9f1412cea77bec5eceec018440d5937b",
+          "md5": "c4f0dfff4f63e86e31e3f4e3e53c2bb0"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-3.5.12-SNAPSHOT-javadoc.jar",
+          "url": "spring-boot-3.5.12-SNAPSHOT-javadoc.jar",
+          "size": 2582207,
+          "sha512": "b7d9c9eba0c60717064df1910bf1e3692183c000c6dbac355d1650814d0c3d3d31ad92587288481145021a4ff8b46658c9713b687f24bb62c029ea5f3cb84d08",
+          "sha256": "086adc740d9b6aaa996d247931ed77d346a6231a11680e57e85003905bf0013c",
+          "sha1": "cb268cc3b538f2b25ab338408f9f391cb5775c26",
+          "md5": "7fc13d8306de4747352937a34359f615"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-3.5.12-SNAPSHOT-sources.jar",
+          "url": "spring-boot-3.5.12-SNAPSHOT-sources.jar",
+          "size": 1251366,
+          "sha512": "ef9a8c8f36fddbbb93c10caaed874b62727a8592f063d1d3571f084952a68eb98573c68c2cda681ad3f10572ae7db1b32d2527fe238dcd6c088c554aad27a0f7",
+          "sha256": "7eedbca7b9b51954fe3eecfc55daeed7fd710087978016c4e945983d8e9a1eab",
+          "sha1": "bf41f383cc66b29385ddd3067cdfb763db38746a",
+          "md5": "fdcdbe0027c9be0cb743f67c7888285b"
+        }
+      ]
+    }
+  ]
+}

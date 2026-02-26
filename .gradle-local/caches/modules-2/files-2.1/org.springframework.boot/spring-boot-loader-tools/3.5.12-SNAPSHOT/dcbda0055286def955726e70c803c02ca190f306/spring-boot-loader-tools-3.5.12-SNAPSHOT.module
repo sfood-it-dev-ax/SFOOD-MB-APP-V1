@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-loader-tools",
+    "version": "3.5.12-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.27.1"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.16"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.5.12-SNAPSHOT.jar",
+          "url": "spring-boot-loader-tools-3.5.12-SNAPSHOT.jar",
+          "size": 465855,
+          "sha512": "4868f28dda6dea3f32abdd8dfac98331bf38a3367e8e64edc85e42b9f0419a35d00150dc52da049df8406225de5af77967264f62d0b29bbfee4f2f163cf203f0",
+          "sha256": "eb6a914319c619d0518e161a07c222d7788a9cfeafa816bf5ef0a6f5fb9f4856",
+          "sha1": "58409b088b29b059efd78a24369ac54e802bae25",
+          "md5": "d9c7f232e11f81746b787d901eff27fa"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.27.1"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.16"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.5.12-SNAPSHOT.jar",
+          "url": "spring-boot-loader-tools-3.5.12-SNAPSHOT.jar",
+          "size": 465855,
+          "sha512": "4868f28dda6dea3f32abdd8dfac98331bf38a3367e8e64edc85e42b9f0419a35d00150dc52da049df8406225de5af77967264f62d0b29bbfee4f2f163cf203f0",
+          "sha256": "eb6a914319c619d0518e161a07c222d7788a9cfeafa816bf5ef0a6f5fb9f4856",
+          "sha1": "58409b088b29b059efd78a24369ac54e802bae25",
+          "md5": "d9c7f232e11f81746b787d901eff27fa"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.5.12-SNAPSHOT-javadoc.jar",
+          "url": "spring-boot-loader-tools-3.5.12-SNAPSHOT-javadoc.jar",
+          "size": 253311,
+          "sha512": "10cf4f49a6919eef18e5625efc08e7987397875e9965c1c9b6fd51b6d9a7a7ed4342a243f9b7ece3062e185acd30750b6be5287fbea352d2bc37f38317f58875",
+          "sha256": "32f156c5168d90bc70c44d26f7ba91242c2ba969fe4a57f5c9e882b526aaaada",
+          "sha1": "b25b605a8a0335da216185254b8ff1795e0808ba",
+          "md5": "f97f537d3a03acd6e2f1c11add25a264"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.5.12-SNAPSHOT-sources.jar",
+          "url": "spring-boot-loader-tools-3.5.12-SNAPSHOT-sources.jar",
+          "size": 75542,
+          "sha512": "42cde26e46f3a8b0c5e6e5e45400f3f600fb40be54425352364018e9d887c3db4cf64413a64313e50dac2eee9d26856fbbddb4ecf6ff7dc916511bc505346a07",
+          "sha256": "aa970fbf025634888d2a6b849c0a0c0c482c0ab409ebf652ed6f4d926373ca8d",
+          "sha1": "24ad384881a6988e8cc3bc2b828f65667ee8e05b",
+          "md5": "b532f814645da2e112c06ab86503139f"
+        }
+      ]
+    }
+  ]
+}
