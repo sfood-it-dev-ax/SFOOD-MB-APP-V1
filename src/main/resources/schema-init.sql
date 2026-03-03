@@ -1,0 +1,1 @@
+CREATE SCHEMA IF NOT EXISTS memo_board_v4;

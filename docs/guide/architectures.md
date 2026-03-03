@@ -64,7 +64,7 @@
                            │ JDBC | JPA | HikariCP
 ┌──────────────────────────▼──────────────────────────────────┐
 │               DATABASE (PostgreSQL — Supabase)              │
-│    Schema: memo_board  |  aws-1-ap-south-1.pooler.supabase.com:6543  │
+│    Schema: memo_board_v4  |  aws-1-ap-south-1.pooler.supabase.com:6543  │
 │           Tables: users / boards / memos / memo_types       │
 │            논리 삭제 (is_hide) | UTF-8 charset              │
 └─────────────────────────────────────────────────────────────┘
@@ -76,7 +76,7 @@
 | --- | --- | --- | --- | --- |
 | Frontend | SFOOD-MB-WEB-V1 | Vite + React | AI 선택 | sfood-it-dev-ax/SFOOD-MB-WEB-V1 |
 | Backend | SFOOD-MB-APP-V1 | Java Spring Boot | JDK 21 / Spring 3.5 | sfood-it-dev-ax/SFOOD-MB-APP-V1 |
-| Database | aws-1-ap-south-1.pooler.supabase.com:6543 | PostgreSQL (Supabase) | 15+ | Schema: memo_board |
+| Database | aws-1-ap-south-1.pooler.supabase.com:6543 | PostgreSQL (Supabase) | 15+ | Schema: memo_board_v4 |
 
 ---
 
@@ -322,8 +322,8 @@ dependencies {
 | RDBMS | PostgreSQL (Supabase Managed) |
 | 서버 | aws-1-ap-south-1.pooler.supabase.com |
 | 포트 | 6543 |
-| 스키마(DB) | memo_board |
-| 접속 URL | `jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:6543/memo_board?sslmode=require` |
+| 스키마(DB) | memo_board_v4 |
+| 접속 URL | `jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:6543/memo_board_v4?sslmode=require` |
 | 계정 ID | postgres.wcvyfovaiigrkmzsqrpq |
 | Character Set | UTF-8 (PostgreSQL 기본) |
 | Collation | en_US.UTF-8 |
@@ -409,8 +409,8 @@ dependencies {
 
 ```sql
 -- 스키마 생성
-CREATE SCHEMA IF NOT EXISTS memo_board;
-SET search_path TO memo_board;
+CREATE SCHEMA IF NOT EXISTS memo_board_v4;
+SET search_path TO memo_board_v4;
 
 -- updated_at 자동 갱신 트리거 함수 (MySQL ON UPDATE CURRENT_TIMESTAMP 대체)
 CREATE OR REPLACE FUNCTION update_updated_at_column()
@@ -711,7 +711,7 @@ spring:
       hibernate:
         format_sql: true
         default_batch_fetch_size: 100
-        default_schema: memo_board
+        default_schema: memo_board_v4
 
   session:
     store-type: jdbc
@@ -728,7 +728,7 @@ server:
 ```yaml
 spring:
   datasource:
-    url: jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:6543/memo_board?sslmode=require
+    url: jdbc:postgresql://aws-1-ap-south-1.pooler.supabase.com:6543/memo_board_v4?sslmode=require
     username: postgres.wcvyfovaiigrkmzsqrpq
     password: "!@!L1e2e34!!!"
     driver-class-name: org.postgresql.Driver
@@ -736,7 +736,7 @@ spring:
       maximum-pool-size: 10
       minimum-idle: 5
       connection-timeout: 30000
-      connection-init-sql: SET search_path TO memo_board
+      connection-init-sql: SET search_path TO memo_board_v4
 
   security:
     oauth2:
